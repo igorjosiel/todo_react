@@ -9,11 +9,12 @@ import Icon from "./components/Icon";
 import Badge from "./components/Badge";
 import Button from "./components/Button";
 import ButtonIcon from "./components/ButtonIcon";
+import InputText from "./components/InputText";
 
 export default function App() {
   return (
-    <div>
-      <div className="flex flex-col gap-2">
+    <div className="grid gap-10">
+      <div className="flex flex-col gap-10">
         <Text variant="body-sm-bold" className="text-pink-base">Olá Mundo!</Text>
         <Text className="text-green-base">Olá Mundo!</Text>
         <Text variant="body-md-bold">Olá Mundo!</Text>
@@ -41,6 +42,10 @@ export default function App() {
         <ButtonIcon icon={TrashIcon} />
         <ButtonIcon icon={TrashIcon} variant="secondary" />
         <ButtonIcon icon={TrashIcon} variant="tertiary" />
+      </div>
+
+      <div>
+        <InputText />
       </div>
     </div>
   );
